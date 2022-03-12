@@ -22,7 +22,7 @@ class Logger:
             self.dictionary[message] = timestamp
             return True
         
-        if timestamp + 10 >= self.dictionary[message]:
+        if timestamp - 10 >= self.dictionary[message]:
             self.dictionary[message] = timestamp
             return True
         else:
