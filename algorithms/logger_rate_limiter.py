@@ -21,7 +21,7 @@ class Logger:
         if message not in self.dictionary:
             self.dictionary[message] = timestamp
             return True
-        
+
         if timestamp - 10 >= self.dictionary[message]:
             self.dictionary[message] = timestamp
             return True
